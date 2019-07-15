@@ -48,7 +48,43 @@
 						}
 					?>
 				</table>
+			</div>
+		</li>
 
+		<li>
+			<p>
+			Utilizando um while, fazer um programa que lance uma moeda (escolhendo
+			um número aleatório que pode ser 0 ou 1) até tirar 5 vezes cara (o número 1).
+			Ao terminar, imprimir o número de lançamentos da moeda até tirar 5 vezes
+			cara.
+			</p>
+			<div>
+				<?php
+
+					$contagem = 0;
+					$n_arremessos = 0;
+
+					while($contagem != 5){
+						
+						$result = mt_rand(0,1);
+						echo $result;
+						$n_arremessos++;
+
+						// FORMA IF NORMAL = = = = = = = = = 
+						// if($result == 1){
+						// 	$contagem++;
+						// } else {
+						// 	$contagem = 0;
+						// }
+
+						// FORMA IF TERNÁRIO com atribuição;
+						// $contagem = ($result == 1 ? $contagem + 1 : 0);
+
+						// FORMA IF TERNÁRIO sem atribuição;
+						$result == 1 ? $contagem++ : $contagem=0;
+					}
+					echo(" - Lançou a moeda $n_arremessos vezes até conseguir 5 caras");
+				?>
 			</div>
 		</li>
 	</ol>
