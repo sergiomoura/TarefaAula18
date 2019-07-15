@@ -87,6 +87,22 @@
 				?>
 			</div>
 		</li>
+		<li>
+			<p>
+			Utilizando um do/while, realizar um programa que lance a moeda até tirar
+			cara (o número 1). No final do programa, imprimir quantos lançamentos da
+			moeda forem necessários.
+			</p>
+			<?php
+				$n_arremessos = 0;
+				do {
+					$result = mt_rand(0,1);
+					$n_arremessos++;
+				} while($result != 1);
+
+				echo('Deu cara depois de '.$n_arremessos.' arremessos');
+			?>
+		</li>
 	</ol>
 </body>
 </html>
