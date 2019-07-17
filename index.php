@@ -207,6 +207,7 @@
 				?>
 			</div>
 		</li>
+
 		<li>
 			<p>
 				Percorrer os valores do array com um foreach que imprima (por exemplo):<br>
@@ -222,6 +223,10 @@
 					}
 				?>
 			</div>
+		</li>
+
+		<li>
+			fiz alteração....
 		</li>
 	</ol>
 </body>
